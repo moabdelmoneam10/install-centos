@@ -1,0 +1,10 @@
+for minimal installation
+
+sed -i s/ONBOOT=no/ONBOOT=yes/ /etc/sysconfig/network-scripts/ifcfg/en0s33
+sudo -i
+//write password of user
+yum update
+yum install -y redhat-lsb-core net-tools epel-release kernal-header kernal-devel
+yum groupinstall -y "Development Tools"
+yum groupinstall -y "ْX Window System" "Mate Desktop"
+systemctl set-default graphical.target
